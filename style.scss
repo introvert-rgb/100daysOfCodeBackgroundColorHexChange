@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: monospace;
+    color: black;
+    .heading {
+        font-size: 4rem;
+    }
+    .colorcode {
+        font-size: 2rem;
+        margin: 1em;
+    }
+    .BtnContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        margin: 2em;
+        cursor: pointer;
+        .changeBtn {
+            font-size: 1.2rem;
+            background: white;
+            outline: none;
+            border: none;
+            padding: 1em 2em;
+            font-weight: 700;
+            box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.1);
+            transform: scale(1);
+            cursor: pointer;
+            transition: all 250ms ease-in-out;
+            position: relative;
+        }
+        &:hover {
+            .changeBtn {
+                transform: scale(1.3);
+            }
+        }
+    }
+}
